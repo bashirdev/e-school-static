@@ -1,21 +1,26 @@
 *, body{
-    margin:0,
-    padding:0,
-    box-sizing:border-box
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 
 
 .hero-section{
     background-color:#F0FFF0;
-    height:576px;
     width:100%;
-    font-family: 'Poppins', sans-serif;
+    height:100%;
+    padding-bottom:50px;
+
 }
 
 nav a{
     color:#000 !important;
     margin-right:25px;
+}
+nav a img{
+    width:200px;
+    height:75px;
 }
 .signIn-bnt{
     background:#21B573;
@@ -140,4 +145,21 @@ footer .container li a{
     color:#fff;
     list-style:none !important;
     text-decoration:none !important;
+}
+
+@media(max-width:768px){
+    .testimonial .testimonial-img{
+        display:flex;
+        justify-content:center !important;
+        align-items:center !important;
+        padding-bottom:20px;
+    }
+
+    nav a img{
+        width:200px; 
+        height:60px;
+    }
+    .hero-img{
+        margin-top:20px;
+    }
 }
